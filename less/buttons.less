@@ -1,0 +1,268 @@
+/**
+  * Kanso - Semantic Flat Buttons
+  * Author & copyright (c) 2013: Kris Olszewski
+  * Mertize Icons by Alessio Atzeni
+  * Dual MIT & GPL license
+  * 
+  * Repo: 
+  */
+
+//
+// Configuration
+// ----------------------------------------
+
+// Color pallete
+@white: #fff;
+@dark: #383d40;
+@blue: #3fc1f1;
+@turquoise: #73c0ca;
+@green: #2eb398;
+@red: #e76049;
+
+// Button colos
+@button-default: @dark;
+@button-primary: @blue;
+@button-secondary: @turquoise;
+@button-success: @green;
+@button-danger: @red;
+@button-link-text-color: @blue;
+@button-link-text-hover-color: @dark;
+
+// Button base
+@button-font-size: 14px;
+@button-line-height: 20px;
+@button-padding: 10px 25px;
+@button-icon-padding: 10px;
+@button-icon-with-text-padding: 10px 15px 10px 10px;
+@button-icon-with-text-spacing: 10px;
+@button-text-color: @white;
+@button-border-radius: 2px;
+
+// Button groups
+@button-group-inner-spacing: 5px;
+@button-group-outer-spacing: 40px;
+
+//
+// Mixins
+// ----------------------------------------
+
+// Clearfix
+.clearfix() {
+  &:after,
+  &:before {
+    display: table;
+    content: '';
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Box sizing
+.box-sizing(@box-model) {
+  -webkit-box-sizing: @box-model;
+  -moz-box-sizing: @box-model;
+  box-sizing: @box-model;
+}
+// Box shadow
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+  -moz-box-shadow: @shadow;
+  box-shadow: @shadow;
+}
+
+// Transition
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+
+// Background sizing
+.background-size(@size) {
+  background-size: @size;
+  -webkit-background-size: @size;
+  -moz-background-size: @size;
+  -o-background-size: @size;
+}
+
+// Button background
+.button-background(@color, @hover: 10%, @active: 10%, @disable: 20%) {
+  background-color: @color;
+  &:hover,
+  &:focus {
+    background-color: lighten(@color, @hover);
+  }
+  &.is-active,
+  &:active {
+    background-color: darken(@color, @active);
+  }
+  &.is-disabled,
+  &[disabled] {
+    background-color: lighten(@color, @disable);
+  }
+}
+
+//
+// Buttons
+// ----------------------------------------
+.button {
+  .transition(all 0.15s ease-in-out);
+  .button-background(@button-default);
+  .box-sizing(border-box);
+  display: inline-block;
+  padding: @button-padding;
+  margin: 0;
+  border: 0;
+  border-radius: @button-border-radius;
+  color: @button-text-color;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  font-size: @button-font-size;
+  font-family: Arial, "Lucida Grande", sans-serif;
+  line-height: @button-line-height;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: @white;
+  }
+  &.is-disabled,
+  &[disabled] {
+    pointer-events: none;
+  }
+  &.is-primary {
+    .button-background(@button-primary);
+  } // .is-primary
+  &.is-secondary {
+    .button-background(@button-secondary);
+  } // .is-secondary
+  &.is-success {
+    .button-background(@button-success);
+  } // .is-success
+  &.is-danger {
+    .button-background(@button-danger);
+  } // .is-danger
+  &.is-link {
+    background-color: transparent;
+    color: @button-link-text-color;
+    &:hover,
+    &:focus,
+    &.is-active,
+    &:active {
+      background-color: transparent;
+      color: @button-link-text-hover-color;
+    }
+    &.is-disabled,
+    &[disabled] {
+      background-color: transparent;
+      color: lighten(@button-link-text-hover-color, 20%);
+    }
+  } // .is-link
+  &.is-embossed {
+    .box-shadow(inset 0 -2px 0 0 rgba(0, 0, 0, 0.2));
+    &.is-active,
+    &:active,
+    &.is-disabled,
+    &[disabled] {
+      .box-shadow(none);
+    }
+  } // .is-embossed
+  &.is-block {
+    display: block;
+    width: 100%;
+  } // .is-block
+  &.has-icon {
+    padding: @button-icon-padding;
+    &.has-text {
+      padding: @button-icon-with-text-padding;
+      [class^="icon-"],
+      [class*=" icon-"]{
+        margin-right: @button-icon-with-text-spacing;
+      }
+    }
+  } // .has-icon
+} // .button
+
+//
+// Button input fix
+// ----------------------------------------
+input.button,
+button.button {
+  font-weight: normal;
+}
+
+//
+// Button group
+// ----------------------------------------
+.button-group-row {
+  .clearfix();
+}
+.button-group {
+  display: block;
+  float: left;
+  margin-right: @button-group-outer-spacing;
+  &.push-right {
+    float: right;
+    margin-right: 0;
+    margin-left: @button-group-outer-spacing;
+  }
+  > .button {
+    display: block;
+    float: left;
+    margin-right: @button-group-inner-spacing;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+} // .button-group
+
+//
+// Icons
+// ----------------------------------------
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  font: 0/0 a;
+  text-indent: 20px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/icon-sprite.png);
+  background-repeat: no-repeat;
+} // [class^="icon-"], [class*=" icon-"]
+.icon-search { background-position: 0 0; }
+.icon-check { background-position: -20px 0; }
+.icon-plus { background-position: -40px 0; }
+.icon-minus { background-position: -60px 0; }
+.icon-cross { background-position: -80px 0; }
+.icon-question { background-position: -100px 0; }
+.icon-pin { background-position: -120px 0; }
+.icon-cloud { background-position: -140px 0; }
+.icon-arrow-left { background-position: -160px 0; }
+.icon-arrow-right { background-position: -180px 0; }
+.icon-arrow-up { background-position: -200px 0; }
+.icon-arrow-down { background-position: -220px 0; }
+
+//
+// HiDPI Icons
+// ----------------------------------------
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  
+  [class^="icon-"],
+  [class*=" icon-"] {
+    background-image: url(../images/icon-sprite@2x.png);
+    .background-size(500px 500px);
+  }
+}

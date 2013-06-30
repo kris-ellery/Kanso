@@ -12,7 +12,8 @@
 ```
 <h3>Form buttons</h3>
 ```html
-<input type="submit" class="button" value="Button">
-<input type="submit" class="button" value="Button">
-
+<input type="submit" class="button" value="Submit">
+<input type="button" class="button" value="Button">
+<input type="reset" class="button" value="Reset">
+<button class="button">Button</button>
 ```

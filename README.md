@@ -1,5 +1,5 @@
 # [Kanso - Semantic Flat Buttons](http://www.kolszewski.com/kanso)
-Kanso is a set of flat buttons written in LESS. 
+Kanso is a set of semantic flat buttons written in LESS and HTML. 
 ## Usage
 **Anchor buttons**
 ```html

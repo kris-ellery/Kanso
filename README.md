@@ -47,13 +47,12 @@
 </div>
 ```
 <h2>License</h2>
-<p>You are free to use Flat Buttons (the "Buttons Set") or any part thereof (the "Buttons") in any personal, open-source or commercial work without obligation of payment (monetary or otherwise) or attribution.</p>
-<p>Do not sell, sub-license, rent, transfer, host, redistribute the Icon Set. (either in existing or modified form).</p>
+<p>You are free to use Kanso Buttons (the "Buttons Set") or any part thereof (the "Buttons") in any personal, open-source or commercial work without obligation of payment (monetary or otherwise) or attribution.</p>
+<p>Do not sell, sub-license, rent, transfer, host, redistribute the Buttons Set. (either in existing or modified form).</p>
 <p>Attribution is optional but it is always appreciated.</p>
 <p>Intellectual property rights are not transferred with the download of the buttons.</p>
 <p>ALL BUTTONS LICENSED ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED. KRIS OLSZEWSKI IS NOT LIABLE FOR ANY DAMAGES ARISING OUT OF ANY DEFECTS IN THIS MATERIAL.</p>
 <p>YOU AGREE TO HOLD THE KRIS OLSZEWSKI HARMLESS FOR ANY RESULT THAT MAY OCCUR DURING THE COURSE OF USING, OR INABILITY TO USE THESE LICENSED BUTTONS.</p>
 <p>IN NO EVENT SHALL WE BE LIABLE FOR ANY DAMAGES INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES OR OTHER LOSSES ARISING OUT OF THE USE OF OR INABILITY TO USE THIS PRODUCTS.</p>
 <h2>Credits</h2>
-<p>Kanso Buttons by <a href="http://www.kolszewski.com/">Kris Olszewski</a>.</p>
 <p>Metrize Icons by <a href="http://www.alessioatzeni.com/">Alessio Atzeni</a>.</p>

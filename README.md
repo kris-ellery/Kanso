@@ -2,3 +2,6 @@
 <p>Semantic Flat Buttons</p>
 <h2>Usage</h2>
 <h3>Anchor buttons</h3>
+```html
+<a class="button">Default</a>
+```

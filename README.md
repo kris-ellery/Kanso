@@ -47,8 +47,8 @@
 </div>
 ```
 <h2>License</h2>
-<p>You are free to use Kanso Buttons (the "Buttons Set") or any part thereof (the "Buttons") in any personal, open-source or commercial work without obligation of payment (monetary or otherwise) or attribution.</p>
-<p>Do not sell, sub-license, rent, transfer, host, redistribute the Buttons Set. (either in existing or modified form).</p>
+<p>You are free to use Kanso Buttons (the "Button Set") or any part thereof (the "Buttons") in any personal, open-source or commercial work without obligation of payment (monetary or otherwise) or attribution.</p>
+<p>Do not sell, sub-license, rent, transfer, host, redistribute the Button Set. (either in existing or modified form).</p>
 <p>Attribution is optional but it is always appreciated.</p>
 <p>Intellectual property rights are not transferred with the download of the buttons.</p>
 <p>ALL BUTTONS LICENSED ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED. KRIS OLSZEWSKI IS NOT LIABLE FOR ANY DAMAGES ARISING OUT OF ANY DEFECTS IN THIS MATERIAL.</p>

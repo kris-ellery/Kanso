@@ -258,10 +258,10 @@ button.button {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   [class^="icon-"],
   [class*=" icon-"] {
-    background-size: 500px 500px;
-    -webkit-background-size: 500px 500px;
-    -moz-background-size: 500px 500px;
-    -o-background-size: 500px 500px;
+    background-size: 380px 20px;
+    -webkit-background-size: 380px 20px;
+    -moz-background-size: 380px 20px;
+    -o-background-size: 380px 20px;
     background-image: url(../images/icon-sprite@2x.png);
   }
 }

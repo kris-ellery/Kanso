@@ -37,14 +37,17 @@ Kanso is a set of semantic flat buttons written in LESS and HTML.
 ```html
 <div class="button-group-row">
   <div class="button-group">
-    <a class="button is-primary">Primary</a>
-    <a class="button is-secondary">Secondary</a>
-  </div>
-  <div class="button-group push-right">
-    <a class="button is-success">Success</a>
-    <a class="button is-danger">Danger</a>
-  </div>
-</div>
+    <a class="button is-success has-icon has-text"><i class="icon-check"></i>New Email</a>
+  </div><!-- /.button-group -->
+  <div class="button-group">
+    <a class="button">Forward</a>
+    <a class="button">Archive</a>
+    <a class="button">Move</a>
+  </div><!-- /.button-group -->
+  <div class="button-group">
+    <a class="button is-danger">Delete</a>
+  </div><!-- /.button-group -->
+</div><!-- /.button-group-row -->
 ```
 ## License
 You are free to use Kanso Semantic Flat Buttons (the "Button Set") or any part thereof (the "Buttons") in any personal, open-source or commercial work without obligation of payment (monetary or otherwise) or attribution.

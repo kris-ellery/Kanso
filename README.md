@@ -1,7 +1,9 @@
 # [Kanso - Semantic Flat Buttons](http://www.kolszewski.com/kanso)
-Kanso is a set of semantic flat buttons written in LESS and HTML. It relates to basic simplicity and the elimination of the ornate.
+Set of semantic flat buttons written in LESS and HTML.
 
-Checkout [live demo](http://www.kolszewski.com/kanso).
+Kanso (簡素), in Japanese aesthetics, means simplicity or elimination of clutter. Things are expressed in a plain, simple, natural manner. Reminds us to think not in terms of decoration but in terms of clarity, a kind of clarity that may be achieved through omission or exclusion of the non-essential. 
+
+[Live demo](http://www.kolszewski.com/kanso)
 
 ## Usage
 **Anchor buttons**

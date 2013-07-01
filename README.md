@@ -22,11 +22,11 @@ Checkout [live demo](http://www.kolszewski.com/kanso).
 ```
 **Disabled buttons**
 ```html
-<a class="button is-disabled">Default</a>
+<a class="button is-disabled">Disabled</a>
 ```
 **Embossed buttons**
 ```html
-<a class="button is-embossed">Default</a>
+<a class="button is-embossed">Embossed</a>
 ```
 **Icon buttons - HiDPI ready**
 ```html

@@ -25,7 +25,7 @@ Kanso is a set of semantic flat buttons written in LESS and HTML.
 ```html
 <a class="button is-embossed">Default</a>
 ```
-**Icon buttons**
+**Icon buttons - HiDPI ready**
 ```html
 <a class="button has-icon"><i class="icon-search">Search</i></a>
 ```

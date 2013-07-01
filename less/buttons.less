@@ -108,12 +108,9 @@
 // Buttons
 // ----------------------------------------
 .button {
-  .transition(all 0.15s ease-in-out);
-  .button-background(@button-default);
-  .box-sizing(border-box);
   display: inline-block;
-  padding: @button-padding;
   margin: 0;
+  padding: @button-padding;
   border: 0;
   border-radius: @button-border-radius;
   color: @button-text-color;
@@ -124,6 +121,10 @@
   font-family: Arial, "Lucida Grande", sans-serif;
   line-height: @button-line-height;
   cursor: pointer;
+  outline: none;
+  .button-background(@button-default);
+  .transition(all 0.15s ease-in-out);
+  .box-sizing(border-box);
   &:hover,
   &:focus {
     color: @white;
@@ -186,7 +187,7 @@
 } // .button
 
 //
-// Button input fix
+// Input font weight fix
 // ----------------------------------------
 input.button,
 button.button {
@@ -200,13 +201,14 @@ button.button {
   .clearfix();
 }
 .button-group {
+  position: relative;
   display: block;
   float: left;
-  margin-right: @button-group-outer-spacing;
+  + .button-group {
+    margin-left: @button-group-outer-spacing;
+  }
   &.push-right {
     float: right;
-    margin-right: 0;
-    margin-left: @button-group-outer-spacing;
   }
   > .button {
     display: block;
@@ -224,16 +226,16 @@ button.button {
 [class^="icon-"],
 [class*=" icon-"] {
   display: inline-block;
-  vertical-align: top;
-  width: 20px;
-  height: 20px;
   overflow: hidden;
-  font: 0/0 a;
-  text-indent: 20px;
   margin: 0;
   padding: 0;
+  width: 20px;
+  height: 20px;
   background-image: url(../images/icon-sprite.png);
   background-repeat: no-repeat;
+  vertical-align: top;
+  text-indent: 20px;
+  font: 0/0 a;
 } // [class^="icon-"], [class*=" icon-"]
 .icon-search { background-position: 0 0; }
 .icon-check { background-position: -20px 0; }
@@ -261,7 +263,7 @@ button.button {
   
   [class^="icon-"],
   [class*=" icon-"] {
-    background-image: url(../images/icon-sprite@2x.png);
     .background-size(500px 500px);
+    background-image: url(../images/icon-sprite@2x.png);
   }
 }

@@ -6,17 +6,9 @@
   * Repo: https://github.com/KrisOlszewski/Kanso/
   */
 .button {
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-  background-color: #383d40;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   display: inline-block;
-  padding: 10px 25px;
   margin: 0;
+  padding: 10px 25px;
   border: 0;
   border-radius: 2px;
   color: #ffffff;
@@ -27,6 +19,15 @@
   font-family: Arial, "Lucida Grande", sans-serif;
   line-height: 20px;
   cursor: pointer;
+  outline: none;
+  background-color: #383d40;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .button:hover,
 .button:focus {
@@ -165,14 +166,15 @@ button.button {
   clear: both;
 }
 .button-group {
+  position: relative;
   display: block;
   float: left;
-  margin-right: 40px;
+}
+.button-group + .button-group {
+  margin-left: 40px;
 }
 .button-group.push-right {
   float: right;
-  margin-right: 0;
-  margin-left: 40px;
 }
 .button-group > .button {
   display: block;
@@ -185,16 +187,16 @@ button.button {
 [class^="icon-"],
 [class*=" icon-"] {
   display: inline-block;
-  vertical-align: top;
-  width: 20px;
-  height: 20px;
   overflow: hidden;
-  font: 0/0 a;
-  text-indent: 20px;
   margin: 0;
   padding: 0;
+  width: 20px;
+  height: 20px;
   background-image: url(../images/icon-sprite.png);
   background-repeat: no-repeat;
+  vertical-align: top;
+  text-indent: 20px;
+  font: 0/0 a;
 }
 .icon-search {
   background-position: 0 0;
@@ -235,10 +237,10 @@ button.button {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   [class^="icon-"],
   [class*=" icon-"] {
-    background-image: url(../images/icon-sprite@2x.png);
     background-size: 500px 500px;
     -webkit-background-size: 500px 500px;
     -moz-background-size: 500px 500px;
     -o-background-size: 500px 500px;
+    background-image: url(../images/icon-sprite@2x.png);
   }
 }

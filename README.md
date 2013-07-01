@@ -1,5 +1,8 @@
 # [Kanso - Semantic Flat Buttons](http://www.kolszewski.com/kanso)
-Kanso is a set of semantic flat buttons written in LESS and HTML. 
+Kanso is a set of semantic flat buttons written in LESS and HTML.
+
+Checkout [live demo](http://www.kolszewski.com/kanso).
+
 ## Usage
 **Anchor buttons**
 ```html
@@ -65,4 +68,4 @@ YOU AGREE TO HOLD THE KRIS OLSZEWSKI HARMLESS FOR ANY RESULT THAT MAY OCCUR DURI
 IN NO EVENT SHALL WE BE LIABLE FOR ANY DAMAGES INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES OR OTHER LOSSES ARISING OUT OF THE USE OF OR INABILITY TO USE THIS PRODUCTS.
 
 ## Credits
-Metrize Icons by [Alessio Atzeni](www.alessioatzeni.com/).
+Metrize Icons by [Alessio Atzeni](http://www.alessioatzeni.com/).

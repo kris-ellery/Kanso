@@ -23,14 +23,6 @@ body {
   text-rendering: optimizeLegibility;
 }
 /**
-  * Iframe
-  */
-iframe {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-}
-/**
   * Headings
   */
 h1 {
@@ -97,20 +89,6 @@ a:hover {
 }
 .container:after {
   clear: both;
-}
-/**
-  * Toolbar
-  */
-.toolbar {
-  background-color: #292F33;
-  padding: 15px 0 10px 0;
-}
-.social-container {
-  float: right;
-}
-.social-container > div {
-  float: left;
-  margin-left: 15px;
 }
 /**
   * Header

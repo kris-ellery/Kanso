@@ -56,20 +56,7 @@ Support: IE8+ and modern browsers
   </div><!-- /.button-group -->
 </div><!-- /.button-group-row -->
 ```
-## License
-You are free to use Kanso Semantic Flat Buttons (the "Button Set") or any part thereof (the "Buttons") in any personal, open-source or commercial work without obligation of payment (monetary or otherwise) or attribution.
+## License & credits
+[MIT](https://github.com/KrisOlszewski/Kanso/blob/master/LICENSE.md)
 
-Do not sell, sub-license, rent, transfer, host, redistribute the Button Set. (either in existing or modified form).
-
-Attribution is optional but it is always appreciated.
-
-Intellectual property rights are not transferred with the download of the buttons.
-
-ALL BUTTONS LICENSED ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED. KRIS OLSZEWSKI IS NOT LIABLE FOR ANY DAMAGES ARISING OUT OF ANY DEFECTS IN THIS MATERIAL.
-
-YOU AGREE TO HOLD KRIS OLSZEWSKI HARMLESS FOR ANY RESULT THAT MAY OCCUR DURING THE COURSE OF USING, OR INABILITY TO USE THESE LICENSED BUTTONS.
-
-IN NO EVENT SHALL KRIS OLSZEWSKI BE LIABLE FOR ANY DAMAGES INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES OR OTHER LOSSES ARISING OUT OF THE USE OF OR INABILITY TO USE THIS PRODUCTS.
-
-## Credits
 Metrize Icons by [Alessio Atzeni](http://www.alessioatzeni.com/).

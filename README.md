@@ -57,6 +57,6 @@ Support: IE8+ and modern browsers
 </div><!-- /.button-group-row -->
 ```
 ## License & credits
-[MIT](https://github.com/KrisOlszewski/Kanso/blob/master/LICENSE.md)
+The [MIT License](https://github.com/KrisOlszewski/Kanso/blob/master/LICENSE.md) (MIT).
 
 Metrize Icons by [Alessio Atzeni](http://www.alessioatzeni.com/).

@@ -13,18 +13,22 @@
 
 // Color palette
 @white: #fff;
-@dark: #383d40;
-@blue: #3fc1f1;
-@turquoise: #73c0ca;
-@green: #2eb398;
-@red: #e76049;
+@dark: #434a54;
+@blue: #3bafda;
+@purple: #967adc;
+@pink: #d770ad;
+@green: #8cc152;
+@red: #da4453;
+@yellow: #f6bb42;
 
 // Button colors
 @button-default: @dark;
 @button-primary: @blue;
-@button-secondary: @turquoise;
+@button-secondary: @purple;
+@button-tertiary: @pink;
 @button-success: @green;
 @button-danger: @red;
+@button-warning: @yellow;
 @button-link-text-color: @blue;
 @button-link-text-hover-color: @dark;
 
@@ -140,12 +144,18 @@
   &.is-secondary {
     .button-background(@button-secondary);
   } // .is-secondary
+  &.is-tertiary {
+    .button-background(@button-tertiary);
+  } // .is-tertiary
   &.is-success {
     .button-background(@button-success);
   } // .is-success
   &.is-danger {
     .button-background(@button-danger);
   } // .is-danger
+  &.is-warning {
+    .button-background(@button-warning);
+  } // .is-warning
   &.is-link {
     background-color: transparent;
     color: @button-link-text-color;

@@ -28,10 +28,6 @@ Support: IE8+ and modern browsers
 ```html
 <a class="button is-disabled">Disabled</a>
 ```
-**Embossed buttons**
-```html
-<a class="button is-embossed">Embossed</a>
-```
 **Icon buttons - HiDPI ready**
 ```html
 <a class="button has-icon"><i class="icon-search">Search</i></a>

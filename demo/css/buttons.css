@@ -9,19 +9,20 @@
 .button {
   display: inline-block;
   margin: 0;
-  padding: 10px 25px;
-  border: 0;
+  padding: 7px 14px;
+  border: 1px solid transparent;
   border-radius: 2px;
   color: #ffffff;
   vertical-align: middle;
   text-align: center;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
   font-family: Arial, "Lucida Grande", sans-serif;
-  line-height: 20px;
+  line-height: 1.5384615384615385;
   cursor: pointer;
   outline: none;
   background-color: #434a54;
+  border-color: #434a54;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
@@ -49,9 +50,11 @@
 .button.is-disabled,
 .button[disabled] {
   pointer-events: none;
+  cursor: not-allowed;
 }
 .button.is-primary {
   background-color: #3bafda;
+  border-color: #3bafda;
 }
 .button.is-primary:hover,
 .button.is-primary:focus {
@@ -67,6 +70,7 @@
 }
 .button.is-secondary {
   background-color: #967adc;
+  border-color: #967adc;
 }
 .button.is-secondary:hover,
 .button.is-secondary:focus {
@@ -82,6 +86,7 @@
 }
 .button.is-tertiary {
   background-color: #d770ad;
+  border-color: #d770ad;
 }
 .button.is-tertiary:hover,
 .button.is-tertiary:focus {
@@ -97,6 +102,7 @@
 }
 .button.is-success {
   background-color: #8cc152;
+  border-color: #8cc152;
 }
 .button.is-success:hover,
 .button.is-success:focus {
@@ -112,6 +118,7 @@
 }
 .button.is-danger {
   background-color: #da4453;
+  border-color: #da4453;
 }
 .button.is-danger:hover,
 .button.is-danger:focus {
@@ -127,6 +134,7 @@
 }
 .button.is-warning {
   background-color: #f6bb42;
+  border-color: #f6bb42;
 }
 .button.is-warning:hover,
 .button.is-warning:focus {
@@ -142,6 +150,7 @@
 }
 .button.is-link {
   background-color: transparent;
+  border-color: transparent;
   color: #3bafda;
 }
 .button.is-link:hover,
@@ -156,37 +165,31 @@
   background-color: transparent;
   color: #707c8d;
 }
-.button.is-embossed {
-  -webkit-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
-}
-.button.is-embossed.is-active,
-.button.is-embossed:active,
-.button.is-embossed.is-disabled,
-.button.is-embossed[disabled] {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
 .button.is-block {
   display: block;
   width: 100%;
 }
+.button.is-block + .is-block {
+  margin-top: 10px;
+}
 .button.has-icon {
-  padding: 10px;
+  padding: 7px;
 }
 .button.has-icon.has-text {
-  padding: 10px 15px 10px 10px;
+  padding: 7px 10px 7px 7px;
 }
 .button.has-icon.has-text [class^="icon-"],
 .button.has-icon.has-text [class*=" icon-"] {
-  margin-right: 10px;
+  margin-right: 7px;
 }
 input.button,
 button.button {
   font-weight: normal;
   width: auto;
+}
+input.button.is-block,
+button.button.is-block {
+  width: 100%;
 }
 .button-group-row:after,
 .button-group-row:before {

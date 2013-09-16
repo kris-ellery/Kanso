@@ -33,12 +33,12 @@
 @button-link-text-hover-color: @dark;
 
 // Button base
-@button-font-size: 14px;
-@button-line-height: 20px;
-@button-padding: 10px 25px;
-@button-icon-padding: 10px;
-@button-icon-with-text-padding: 10px 15px 10px 10px;
-@button-icon-with-text-spacing: 10px;
+@button-font-size: 13px;
+@button-line-height: (20/13);
+@button-padding: 7px 14px;
+@button-icon-padding: 7px;
+@button-icon-with-text-padding: 7px 10px 7px 7px;
+@button-icon-with-text-spacing: 7px;
 @button-text-color: @white;
 @button-border-radius: 2px;
 
@@ -69,6 +69,7 @@
   -moz-box-sizing: @box-model;
   box-sizing: @box-model;
 }
+
 // Box shadow
 .box-shadow(@shadow) {
   -webkit-box-shadow: @shadow;
@@ -95,6 +96,7 @@
 // Button background
 .button-background(@color, @hover: 10%, @active: 10%, @disable: 20%) {
   background-color: @color;
+  border-color: @color;
   &:hover,
   &:focus {
     background-color: lighten(@color, @hover);
@@ -116,7 +118,7 @@
   display: inline-block;
   margin: 0;
   padding: @button-padding;
-  border: 0;
+  border: 1px solid transparent;
   border-radius: @button-border-radius;
   color: @button-text-color;
   vertical-align: middle;
@@ -137,6 +139,7 @@
   &.is-disabled,
   &[disabled] {
     pointer-events: none;
+    cursor: not-allowed;
   }
   &.is-primary {
     .button-background(@button-primary);
@@ -158,6 +161,7 @@
   } // .is-warning
   &.is-link {
     background-color: transparent;
+    border-color: transparent;
     color: @button-link-text-color;
     &:hover,
     &:focus,
@@ -172,18 +176,12 @@
       color: lighten(@button-link-text-hover-color, 20%);
     }
   } // .is-link
-  &.is-embossed {
-    .box-shadow(inset 0 -2px 0 0 rgba(0, 0, 0, 0.2));
-    &.is-active,
-    &:active,
-    &.is-disabled,
-    &[disabled] {
-      .box-shadow(none);
-    }
-  } // .is-embossed
   &.is-block {
     display: block;
     width: 100%;
+    & + .is-block {
+      margin-top: 10px;
+    }
   } // .is-block
   &.has-icon {
     padding: @button-icon-padding;
@@ -204,6 +202,9 @@ input.button,
 button.button {
   font-weight: normal;
   width: auto;
+  &.is-block {
+    width: 100%;
+  }
 }
 
 //

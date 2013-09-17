@@ -100,14 +100,17 @@
   &:hover,
   &:focus {
     background-color: lighten(@color, @hover);
+    border-color: lighten(@color, @hover);
   }
   &.is-active,
   &:active {
     background-color: darken(@color, @active);
+    border-color: darken(@color, @active);
   }
   &.is-disabled,
   &[disabled] {
     background-color: lighten(@color, @disable);
+    border-color: lighten(@color, @disable);
   }
 }
 

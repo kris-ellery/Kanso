@@ -1,0 +1,26 @@
+{
+  "name": "kanso",
+  "title": "Kanso - Semantic Flat Buttons",
+  "description": "Set of free semantic flat buttons written in CSS and HTML. SASS and LESS source code available.",
+  "version": "2.0.0",
+  "homepage": "http://www.kolszewski.com/kanso/",
+  "author": {
+    "name": "Kris Olszewski",
+    "url": "http://www.kolszewski.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/KrisOlszewski/Kanso"
+  },
+  "license": "The MIT License (MIT)",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-less": "~0.7.0",
+    "grunt-autoprefixer": "~0.3.0",
+    "grunt-csscomb": "~0.5.0",
+    "grunt-csso": "~0.5.0",
+    "grunt-banner": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

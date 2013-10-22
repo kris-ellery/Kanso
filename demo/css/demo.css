@@ -120,7 +120,7 @@ a:hover {
   display: block;
 }
 /**
-  * Block
+  * Full width blocks
   */
 .block {
   padding: 50px 0;
@@ -134,7 +134,7 @@ a:hover {
   background-color: #f9f9f9;
 }
 /**
-  * Footer
+  * Footer and copyrights
   */
 .footer {
   padding: 50px 0 100px 0;
@@ -153,7 +153,7 @@ a:hover {
   color: #ffffff;
 }
 /**
-  * Pretty print overrides
+  * Overrides for .prettyprint
   */
 pre.prettyprint {
   margin: 20px 0;
@@ -174,23 +174,4 @@ pre.prettyprint {
 code {
   margin: 0;
   padding: 0;
-}
-/**
-  * Button overrides
-  */
-.button {
-  font-weight: 700;
-  font-style: normal;
-  font-family: 'Open Sans', sans-serif;
-}
-.button-link {
-  font-weight: 400;
-  font-style: normal;
-  font-family: 'Open Sans', sans-serif;
-}
-input.button,
-button.button {
-  font-weight: 400;
-  font-style: normal;
-  font-family: 'Open Sans', sans-serif;
 }

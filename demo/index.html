@@ -5,26 +5,22 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Kanso - Semantic Flat Buttons</title>
+    <title>Kanso - Free HTML/CSS Semantic Flat Buttons</title>
+    <meta name="description" content="Set of free semantic flat buttons written in CSS and HTML (SASS & LESS available). Kanso (&#31777;&#32032;), in Japanese aesthetics, means simplicity or elimination of clutter. Things are expressed in a plain, simple, natural manner. Reminds us to think not in terms of decoration but in terms of clarity, a kind of clarity that may be achieved through omission or exclusion of the non-essential.">
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:400,600,700,300|Open+Sans+Condensed:300">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css">
-    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/kanso.css">
     <link rel="stylesheet" href="css/demo.css">
   </head>
   <body>
     
     <header class="header">
       <div class="container">
-        <a href="/" class="logo">
+        <a href="/kanso/" class="logo">
           <h1>Kanso - Semantic Flat Buttons</h1>
         </a>
         <p class="lead">Kanso (&#31777;&#32032;), in Japanese aesthetics, means simplicity or elimination of clutter. Things are expressed in a plain, simple, natural manner. Reminds us to think not in terms of decoration but in terms of clarity, a kind of clarity that may be achieved through omission or exclusion of the non-essential.</p>
-        <div class="button-group-row">
-          <div class="button-group header-buttons">
-            <a href="https://github.com/KrisOlszewski/Kanso" target="_blank" class="button is-primary">GitHub Project</a>
-          </div><!-- /.button-group -->
-        </div><!-- /.button-group-row -->
       </div><!-- /.container -->
     </header>
     
@@ -32,22 +28,22 @@
       <div class="container">
         <article class="block-content">
           <h2>Anchor buttons</h2>
-          <a class="button">Default</a>
+          <a class="button is-default">Default</a>
           <a class="button is-primary">Primary</a>
           <a class="button is-secondary">Secondary</a>
-          <a class="button is-tertiary">Tertiary</a>
           <a class="button is-success">Success</a>
           <a class="button is-danger">Danger</a>
           <a class="button is-warning">Warning</a>
+          <a class="button is-inverse">Inverse</a>
           <a class="button is-link">Link</a>
 <pre class="prettyprint lang-html">
-&lt;a class=&quot;button&quot;&gt;Default&lt;/a&gt;
+&lt;a class=&quot;button is-default&quot;&gt;Default&lt;/a&gt;
 &lt;a class=&quot;button is-primary&quot;&gt;Primary&lt;/a&gt;
 &lt;a class=&quot;button is-secondary&quot;&gt;Secondary&lt;/a&gt;
-&lt;a class=&quot;button is-tertiary&quot;&gt;Tertiary&lt;/a&gt;
 &lt;a class=&quot;button is-success&quot;&gt;Success&lt;/a&gt;
 &lt;a class=&quot;button is-danger&quot;&gt;Danger&lt;/a&gt;
 &lt;a class=&quot;button is-warning&quot;&gt;Warning&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;Inverse&lt;/a&gt;
 &lt;a class=&quot;button is-link&quot;&gt;Link&lt;/a&gt;
 </pre>
         </article><!-- /.block-content -->
@@ -61,12 +57,12 @@
           <input type="submit" class="button is-primary" value="type='submit'">
           <input type="button" class="button is-secondary" value="type='button'">
           <input type="reset" class="button is-danger" value="type='reset'">
-          <button class="button">Button</button>
+          <button class="button is-inverse">Button</button>
 <pre class="prettyprint lang-html">
 &lt;input type=&quot;submit&quot; class=&quot;button is-primary&quot; value=&quot;type=&#039;submit&#039;&quot;&gt;
 &lt;input type=&quot;button&quot; class=&quot;button is-secondary&quot; value=&quot;type=&#039;button&#039;&quot;&gt;
 &lt;input type=&quot;reset&quot; class=&quot;button is-danger&quot; value=&quot;type=&#039;reset&#039;&quot;&gt;
-&lt;button class=&quot;button&quot;&gt;Button&lt;/button&gt;
+&lt;button class=&quot;button is-inverse&quot;&gt;Button&lt;/button&gt;
 </pre>
         </article><!-- /.block-content -->
       </div><!-- /.container -->
@@ -76,22 +72,22 @@
       <div class="container">
         <article class="block-content">
           <h2>Disabled buttons</h2>
-          <a class="button is-disabled">Default</a>
+          <a class="button is-default is-disabled">Default</a>
           <a class="button is-primary is-disabled">Primary</a>
           <a class="button is-secondary is-disabled">Secondary</a>
-          <a class="button is-tertiary is-disabled">Tertiary</a>
           <a class="button is-success is-disabled">Success</a>
           <a class="button is-danger is-disabled">Danger</a>
           <a class="button is-warning is-disabled">Warning</a>
+          <a class="button is-inverse is-disabled">Inverse</a>
           <a class="button is-link is-disabled">Link</a>
 <pre class="prettyprint lang-html">
-&lt;a class=&quot;button is-disabled&quot;&gt;Default&lt;/a&gt;
+&lt;a class=&quot;button is-default is-disabled&quot;&gt;Default&lt;/a&gt;
 &lt;a class=&quot;button is-primary is-disabled&quot;&gt;Primary&lt;/a&gt;
 &lt;a class=&quot;button is-secondary is-disabled&quot;&gt;Secondary&lt;/a&gt;
-&lt;a class=&quot;button is-tertiary is-disabled&quot;&gt;Tertiary&lt;/a&gt;
 &lt;a class=&quot;button is-success is-disabled&quot;&gt;Success&lt;/a&gt;
 &lt;a class=&quot;button is-danger is-disabled&quot;&gt;Danger&lt;/a&gt;
 &lt;a class=&quot;button is-warning is-disabled&quot;&gt;Warning&lt;/a&gt;
+&lt;a class=&quot;button is-inverse is-disabled&quot;&gt;Inverse&lt;/a&gt;
 &lt;a class=&quot;button is-link is-disabled&quot;&gt;Link&lt;/a&gt;
 </pre>
         </article><!-- /.block-content -->
@@ -101,46 +97,39 @@
     <section class="block">
       <div class="container">
         <article class="block-content">
-          <h2>Icon buttons (HiDPI ready)</h2>
-          <a class="button has-icon"><i class="icon-search">Search</i></a>
-          <a class="button has-icon"><i class="icon-check">Check</i></a>
-          <a class="button has-icon"><i class="icon-plus">Plus</i></a>
-          <a class="button has-icon"><i class="icon-minus">Minus</i></a>
-          <a class="button has-icon"><i class="icon-cross">Cross</i></a>
-          <a class="button has-icon"><i class="icon-help">Help</i></a>
-          <a class="button has-icon"><i class="icon-pin">Pin</i></a>
-          <a class="button has-icon"><i class="icon-cloud">Cloud</i></a>
-          <a class="button has-icon"><i class="icon-arrow-left">Left</i></a>
-          <a class="button has-icon"><i class="icon-arrow-right">Right</i></a>
-          <a class="button has-icon"><i class="icon-arrow-up">Up</i></a>
-          <a class="button has-icon"><i class="icon-arrow-down">Down</i></a>
-          <a class="button has-icon"><i class="icon-attachment">Attachment</i></a>
-          <a class="button has-icon"><i class="icon-chat">Chat</i></a>
-          <a class="button has-icon"><i class="icon-config">Config</i></a>
-          <a class="button has-icon"><i class="icon-tool">Tool</i></a>
-          <a class="button has-icon"><i class="icon-phone">Phone</i></a>
-          <a class="button has-icon"><i class="icon-minimize">Minimize</i></a>
-          <a class="button has-icon"><i class="icon-maximize">Maximize</i></a>
+          <h2>Icon buttons (<a href="http://fontawesome.io" target="_blank">Font Awesome Icons</a>)</h2>
+          <a class="button is-inverse"><i class="icon icon-gear"></i></a>
+          <a class="button is-inverse"><i class="icon icon-beaker"></i></a>
+          <a class="button is-inverse"><i class="icon icon-envelope"></i></a>
+          <a class="button is-inverse"><i class="icon icon-rss"></i></a>
+          <a class="button is-inverse"><i class="icon icon-location-arrow"></i></a>
+          <a class="button is-inverse"><i class="icon icon-off"></i></a>
+          <a class="button is-inverse"><i class="icon icon-phone"></i></a>
+          <a class="button is-inverse"><i class="icon icon-heart"></i></a>
+          <a class="button is-inverse"><i class="icon icon-male"></i></a>
+          <a class="button is-inverse"><i class="icon icon-retweet"></i></a>
+          <a class="button is-inverse"><i class="icon icon-comment"></i></a>
+          <a class="button is-inverse"><i class="icon icon-camera"></i></a>
+          <a class="button is-inverse"><i class="icon icon-trash"></i></a>
+          <a class="button is-inverse"><i class="icon icon-star"></i></a>
+          <a class="button is-inverse"><i class="icon icon-wrench"></i></a>
+          <a class="button is-link" href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">...and more!</a>
 <pre class="prettyprint lang-html">
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-search&quot;&gt;Search&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-check&quot;&gt;Check&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;Plus&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-minus&quot;&gt;Minus&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-cross&quot;&gt;Cross&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-help&quot;&gt;Help&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-pin&quot;&gt;Pin&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-cloud&quot;&gt;Cloud&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-arrow-left&quot;&gt;Left&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-arrow-right&quot;&gt;Right&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-arrow-up&quot;&gt;Up&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-arrow-down&quot;&gt;Down&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-attachment&quot;&gt;Attachment&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-chat&quot;&gt;Chat&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-config&quot;&gt;Config&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-tool&quot;&gt;Tool&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-phone&quot;&gt;Phone&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-minimize&quot;&gt;Minimize&lt;/i&gt;&lt;/a&gt;
-&lt;a class=&quot;button has-icon&quot;&gt;&lt;i class=&quot;icon-maximize&quot;&gt;Maximize&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;&lt;i class=&quot;icon icon-gear&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;&lt;i class=&quot;icon icon-beaker&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;&lt;i class=&quot;icon icon-envelope&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;&lt;i class=&quot;icon icon-rss&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;&lt;i class=&quot;icon icon-location-arrow&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;&lt;i class=&quot;icon icon-off&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;&lt;i class=&quot;icon icon-phone&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;&lt;i class=&quot;icon icon-heart&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;&lt;i class=&quot;icon icon-male&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;&lt;i class=&quot;icon icon-retweet&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;&lt;i class=&quot;icon icon-comment&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;&lt;i class=&quot;icon icon-camera&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;&lt;i class=&quot;icon icon-trash&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;&lt;i class=&quot;icon icon-star&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class=&quot;button is-inverse&quot;&gt;&lt;i class=&quot;icon icon-wrench&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 </pre>
         </article><!-- /.block-content -->
       </div><!-- /.container -->
@@ -150,23 +139,24 @@
       <div class="container">
         <article class="block-content">
           <h2>Icon buttons with text</h2>
-          <a class="button has-icon has-text"><i class="icon-search"></i>Search</a>
-          <a class="button has-icon has-text"><i class="icon-check"></i>Check</a>
-          <a class="button has-icon has-text"><i class="icon-plus"></i>Plus</a>
-          <a class="button has-icon has-text"><i class="icon-minus"></i>Minus</a>
-          <a class="button has-icon has-text"><i class="icon-cross"></i>Cross</a>
-          <a class="button has-icon has-text"><i class="icon-help"></i>Help</a>
-          <a class="button has-icon has-text"><i class="icon-pin"></i>Pin</a>
-          <a class="button has-icon has-text"><i class="icon-cloud"></i>Cloud</a>
+          <a class="button is-inverse has-icon-spacing"><i class="icon icon-search"></i> Search</a>
+          <a class="button is-inverse has-icon-spacing"><i class="icon icon-calendar"></i> Calendar</a>
+          <a class="button is-inverse has-icon-spacing"><i class="icon icon-cloud"></i> Cloud</a>
+          <a class="button is-inverse has-icon-spacing"><i class="icon icon-inbox"></i> Inbox</a>
+          <a class="button is-inverse has-icon-spacing"><i class="icon icon-lock"></i> Lock</a>
+          <a class="button is-inverse has-icon-spacing"><i class="icon icon-random"></i> Random</a>
+          <a class="button is-inverse has-icon-spacing"><i class="icon icon-map-marker"></i> Map</a>
+          <a class="button is-inverse has-icon-spacing"><i class="icon icon-signal"></i> Signal</a>
+          <a class="button is-link" href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">...and more!</a>
 <pre class="prettyprint lang-html">
-&lt;a class=&quot;button has-icon has-text&quot;&gt;&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;Search&lt;/a&gt;
-&lt;a class=&quot;button has-icon has-text&quot;&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt;Check&lt;/a&gt;
-&lt;a class=&quot;button has-icon has-text&quot;&gt;&lt;i class=&quot;icon-plus&quot;&gt;&lt;/i&gt;Plus&lt;/a&gt;
-&lt;a class=&quot;button has-icon has-text&quot;&gt;&lt;i class=&quot;icon-minus&quot;&gt;&lt;/i&gt;Minus&lt;/a&gt;
-&lt;a class=&quot;button has-icon has-text&quot;&gt;&lt;i class=&quot;icon-cross&quot;&gt;&lt;/i&gt;Cross&lt;/a&gt;
-&lt;a class=&quot;button has-icon has-text&quot;&gt;&lt;i class=&quot;icon-help&quot;&gt;&lt;/i&gt;Help&lt;/a&gt;
-&lt;a class=&quot;button has-icon has-text&quot;&gt;&lt;i class=&quot;icon-pin&quot;&gt;&lt;/i&gt;Pin&lt;/a&gt;
-&lt;a class=&quot;button has-icon has-text&quot;&gt;&lt;i class=&quot;icon-cloud&quot;&gt;&lt;/i&gt;Cloud&lt;/a&gt;
+&lt;a class=&quot;button is-inverse has-icon-spacing&quot;&gt;&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt; Search&lt;/a&gt;
+&lt;a class=&quot;button is-inverse has-icon-spacing&quot;&gt;&lt;i class=&quot;icon-calendar&quot;&gt;&lt;/i&gt; Calendar&lt;/a&gt;
+&lt;a class=&quot;button is-inverse has-icon-spacing&quot;&gt;&lt;i class=&quot;icon-cloud&quot;&gt;&lt;/i&gt; Cloud&lt;/a&gt;
+&lt;a class=&quot;button is-inverse has-icon-spacing&quot;&gt;&lt;i class=&quot;icon-inbox&quot;&gt;&lt;/i&gt; Inbox&lt;/a&gt;
+&lt;a class=&quot;button is-inverse has-icon-spacing&quot;&gt;&lt;i class=&quot;icon-lock&quot;&gt;&lt;/i&gt; Lock&lt;/a&gt;
+&lt;a class=&quot;button is-inverse has-icon-spacing&quot;&gt;&lt;i class=&quot;icon-random&quot;&gt;&lt;/i&gt; Random&lt;/a&gt;
+&lt;a class=&quot;button is-inverse has-icon-spacing&quot;&gt;&lt;i class=&quot;icon-map-marker&quot;&gt;&lt;/i&gt; Map&lt;/a&gt;
+&lt;a class=&quot;button is-inverse has-icon-spacing&quot;&gt;&lt;i class=&quot;icon-signal&quot;&gt;&lt;/i&gt; Signal&lt;/a&gt;
 </pre>
         </article><!-- /.block-content -->
       </div><!-- /.container -->
@@ -178,30 +168,30 @@
           <h2>Button group</h2>
           <p>Based on the <a href="http://en.wikipedia.org/wiki/Principles_of_grouping" target="_blank">Law of Proximity</a> from the <a href="http://en.wikipedia.org/wiki/Gestalt_psychology" target="_blank">Gestalt Laws of Perceptual Organization</a>.</p>
           <div class="button-group-row">
-            <div class="button-group">
-              <a class="button is-success has-icon has-text"><i class="icon-check"></i>New Email</a>
+            <div class="button-group pull-left">
+              <a class="button is-success has-icon-spacing"><i class="icon icon-ok"></i> New Email</a>
             </div><!-- /.button-group -->
-            <div class="button-group">
-              <a class="button">Forward</a>
-              <a class="button">Archive</a>
-              <a class="button">Move</a>
+            <div class="button-group pull-left">
+              <a class="button is-default">Forward</a>
+              <a class="button is-default">Archive</a>
+              <a class="button is-default">Move</a>
             </div><!-- /.button-group -->
-            <div class="button-group">
-              <a class="button is-danger has-icon has-text"><i class="icon-cross"></i>Delete</a>
+            <div class="button-group pull-left">
+              <a class="button is-danger has-icon-spacing"><i class="icon icon-remove"></i> Delete</a>
             </div><!-- /.button-group -->
           </div><!-- /.button-group-row -->
 <pre class="prettyprint lang-html">
 &lt;div class=&quot;button-group-row&quot;&gt;
-  &lt;div class=&quot;button-group&quot;&gt;
-    &lt;a class=&quot;button is-success has-icon has-text&quot;&gt;&lt;i class=&quot;icon-check&quot;&gt;&lt;/i&gt;New Email&lt;/a&gt;
+  &lt;div class=&quot;button-group pull-left&quot;&gt;
+    &lt;a class=&quot;button is-success has-icon-spacing&quot;&gt;&lt;i class=&quot;icon icon-ok&quot;&gt;&lt;/i&gt; New Email&lt;/a&gt;
   &lt;/div&gt;&lt;!-- /.button-group --&gt;
-  &lt;div class=&quot;button-group&quot;&gt;
-    &lt;a class=&quot;button&quot;&gt;Forward&lt;/a&gt;
-    &lt;a class=&quot;button&quot;&gt;Archive&lt;/a&gt;
-    &lt;a class=&quot;button&quot;&gt;Move&lt;/a&gt;
+  &lt;div class=&quot;button-group pull-left&quot;&gt;
+    &lt;a class=&quot;button is-default&quot;&gt;Forward&lt;/a&gt;
+    &lt;a class=&quot;button is-default&quot;&gt;Archive&lt;/a&gt;
+    &lt;a class=&quot;button is-default&quot;&gt;Move&lt;/a&gt;
   &lt;/div&gt;&lt;!-- /.button-group --&gt;
-  &lt;div class=&quot;button-group&quot;&gt;
-    &lt;a class=&quot;button is-danger has-icon has-text&quot;&gt;&lt;i class=&quot;icon-cross&quot;&gt;&lt;/i&gt;Delete&lt;/a&gt;
+  &lt;div class=&quot;button-group pull-left&quot;&gt;
+    &lt;a class=&quot;button is-danger has-icon-spacing&quot;&gt;&lt;i class=&quot;icon icon-remove&quot;&gt;&lt;/i&gt; Delete&lt;/a&gt;
   &lt;/div&gt;&lt;!-- /.button-group --&gt;
 &lt;/div&gt;&lt;!-- /.button-group-row --&gt;
 </pre>
@@ -214,7 +204,7 @@
         <article class="block-content">
           <h2>License &amp; credits</h2>
           <p>The <a href="https://github.com/KrisOlszewski/Kanso/blob/master/LICENSE.md" target="_blank">MIT License</a> (MIT).</p>
-          <p>Metrize Icons by <a href="http://www.alessioatzeni.com/" target="_blank">Alessio Atzeni</a>.</p>
+          <p>Font Awesome Icons by <a href="http://fontawesome.io" target="_blank">Dave Gandy</a>.</p>
         </article><!-- /.block-content -->
       </div><!-- /.container -->
     </section><!-- /.block -->
@@ -224,6 +214,5 @@
         <p class="copyright">2013 &copy; Kanso - Semantic Flat Buttons by <a href="http://www.kolszewski.com" target="_blank">Kris Olszewski</a>
       </div><!-- /.container -->
     </footer>
-    
   </body>
 </html>

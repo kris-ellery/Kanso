@@ -10,7 +10,7 @@ Support: IE8+ and modern browsers
 ## Usage
 **Anchor buttons**
 ```html
-<a class="button">Default</a>
+<a class="button is-default">Default</a>
 <a class="button is-primary">Primary</a>
 <a class="button is-secondary">Secondary</a>
 <a class="button is-success">Success</a>
@@ -19,35 +19,35 @@ Support: IE8+ and modern browsers
 ```
 **Form buttons**
 ```html
-<input type="submit" class="button" value="Submit">
-<input type="button" class="button" value="Button">
-<input type="reset" class="button" value="Reset">
-<button class="button">Button</button>
+<input type="submit" class="button is-default" value="Submit">
+<input type="button" class="button is-default" value="Button">
+<input type="reset" class="button is-default" value="Reset">
+<button class="button is-default">Button</button>
 ```
 **Disabled buttons**
 ```html
-<a class="button is-disabled">Disabled</a>
+<a class="button is-default is-disabled">Disabled</a>
 ```
-**Icon buttons - HiDPI ready**
+**Icon buttons - (Font Awesome Icons)**
 ```html
-<a class="button has-icon"><i class="icon-search">Search</i></a>
+<a class="button is-default"><i class="icon icon-search"></i></a>
 ```
 **Icon buttons with text**
 ```html
-<a class="button has-icon has-text"><i class="icon-search"></i>Search</a>
+<a class="button has-icon-spacing"><i class="icon icon-search"></i> Search</a>
 ```
 **Button group**
 ```html
 <div class="button-group-row">
-  <div class="button-group">
-    <a class="button is-success has-icon has-text"><i class="icon-check"></i>New Email</a>
+  <div class="button-group pull-left">
+    <a class="button is-success has-icon-spacing"><i class="icon-ok"></i> New Email</a>
   </div><!-- /.button-group -->
-  <div class="button-group">
-    <a class="button">Forward</a>
-    <a class="button">Archive</a>
-    <a class="button">Move</a>
+  <div class="button-group pull-left">
+    <a class="button is-default">Forward</a>
+    <a class="button is-default">Archive</a>
+    <a class="button is-default">Move</a>
   </div><!-- /.button-group -->
-  <div class="button-group">
+  <div class="button-group pull-left">
     <a class="button is-danger">Delete</a>
   </div><!-- /.button-group -->
 </div><!-- /.button-group-row -->
@@ -55,4 +55,4 @@ Support: IE8+ and modern browsers
 ## License & credits
 The [MIT License](https://github.com/KrisOlszewski/Kanso/blob/master/LICENSE.md) (MIT).
 
-Metrize Icons by [Alessio Atzeni](http://www.alessioatzeni.com/).
+Font Awesome Icons by [Dave Gandy](http://fontawesome.io/).

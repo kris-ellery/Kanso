@@ -7,6 +7,8 @@ Kanso (簡素), in Japanese aesthetics, means simplicity or elimination of clutt
 
 Support: IE8+ and modern browsers
 
+Note: by default this project supports SASS. If you want to use LESS please change GruntJS configuration.
+
 ## Usage
 **Anchor buttons**
 ```html

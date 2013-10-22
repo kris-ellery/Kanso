@@ -34,7 +34,7 @@ Support: IE8+ and modern browsers
 ```
 **Icon buttons with text**
 ```html
-<a class="button has-icon-spacing"><i class="icon icon-search"></i> Search</a>
+<a class="button is-default has-icon-spacing"><i class="icon icon-search"></i> Search</a>
 ```
 **Button group**
 ```html

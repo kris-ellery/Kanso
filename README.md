@@ -32,17 +32,17 @@ Note: by default this project supports SASS. If you want to use LESS please chan
 ```
 **Icon buttons - (Font Awesome Icons)**
 ```html
-<a class="button is-default"><i class="icon icon-search"></i></a>
+<a class="button is-default has-fixed-icon"><i class="fa fa-search"></i></a>
 ```
 **Icon buttons with text**
 ```html
-<a class="button is-default has-icon-spacing"><i class="icon icon-search"></i> Search</a>
+<a class="button is-default has-icon-spacing"><i class="fa fa-search"></i> Search</a>
 ```
 **Button group**
 ```html
 <div class="button-group-row">
   <div class="button-group pull-left">
-    <a class="button is-success has-icon-spacing"><i class="icon-ok"></i> New Email</a>
+    <a class="button is-success has-icon-spacing"><i class="fa fa-check"></i> New Email</a>
   </div><!-- /.button-group -->
   <div class="button-group pull-left">
     <a class="button is-default">Forward</a>

@@ -115,12 +115,11 @@ $button-link-color-active: lighten( #3fc1f1, 5% );
     font-family: $font-family;
     font-weight: normal;
     font-style: normal;
-    src: url('#{$file-path}.eot');
-    src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
-    url('#{$file-path}.woff') format('woff'),
-    url('#{$file-path}.svg##{$font-family}') format('svg'),
-    url('#{$file-path}.ttf') format('truetype');
-    
+    src:  url('#{$file-path}.eot');
+    src:  url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+          url('#{$file-path}.woff') format('woff'),
+          url('#{$file-path}.ttf') format('truetype'),
+          url('#{$file-path}.svg##{$font-family}') format('svg');
   }
 }
 

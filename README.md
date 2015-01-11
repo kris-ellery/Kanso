@@ -1,59 +1,101 @@
 # [Kanso - Semantic Flat Buttons](http://www.kolszewski.com/kanso)
-Set of semantic flat buttons written in CSS and HTML. SASS and LESS source code available. 
+Set of semantic flat buttons written in CSS and HTML. SASS and LESS source code available.
 
-Kanso (簡素), in Japanese aesthetics, means simplicity or elimination of clutter. Things are expressed in a plain, simple, natural manner. Reminds us to think not in terms of decoration but in terms of clarity, a kind of clarity that may be achieved through omission or exclusion of the non-essential. 
+Kanso (簡素), in Japanese aesthetics, means simplicity or elimination of clutter. Things are expressed in a plain, simple, natural manner. Reminds us to think not in terms of decoration but in terms of clarity, a kind of clarity that may be achieved through omission or exclusion of the non-essential.
 
 [Live demo](http://www.kolszewski.com/kanso)
 
-Support: IE8+ and modern browsers
-
-Note: by default this project supports SASS. If you want to use LESS please change GruntJS configuration.
-
 ## Usage
-**Anchor buttons**
+
+**Base + Variation**
 ```html
-<a class="button is-default">Default</a>
-<a class="button is-primary">Primary</a>
-<a class="button is-secondary">Secondary</a>
-<a class="button is-success">Success</a>
-<a class="button is-danger">Danger</a>
-<a class="button is-link">Link</a>
+<a class="Button Button--base Button--default">Default</a>
+<a class="Button Button--base Button--primary">Primary</a>
+<a class="Button Button--base Button--secondary">Secondary</a>
+<a class="Button Button--base Button--outline">Outline</a>
+<a class="Button Button--base Button--link">Link</a>
+<a class="Button Button--base Button--info">Info</a>
+<a class="Button Button--base Button--success">Success</a>
+<a class="Button Button--base Button--warning">Warning</a>
+<a class="Button Button--base Button--error">Error</a>
 ```
-**Form buttons**
+
+**Small**
 ```html
-<input type="submit" class="button is-default" value="Submit">
-<input type="button" class="button is-default" value="Button">
-<input type="reset" class="button is-default" value="Reset">
-<button class="button is-default">Button</button>
+<a class="Button Button--small Button--default">Small</a>
 ```
-**Disabled buttons**
+
+**Large**
 ```html
-<a class="button is-default is-disabled">Disabled</a>
+<a class="Button Button--large Button--default">Large</a>
 ```
-**Icon buttons - (Font Awesome Icons)**
+
+**Form**
 ```html
-<a class="button is-default has-fixed-icon"><i class="fa fa-search"></i></a>
+<input type="submit" class="Button Button--base Button--default" value="Submit">
+<input type="Button" class="Button Button--base Button--default" value="Button">
+<input type="reset" class="Button Button--base Button--default" value="Reset">
+<button class="Button Button--base Button--default">Button</button>
 ```
-**Icon buttons with text**
+
+**Disabled**
 ```html
-<a class="button is-default has-icon-spacing"><i class="fa fa-search"></i> Search</a>
+<a class="Button Button--base Button--default is-disabled">Disabled</a>
 ```
-**Button group**
+
+**Button w/out text + Font Awesome**
 ```html
-<div class="button-group-row">
-  <div class="button-group pull-left">
-    <a class="button is-success has-icon-spacing"><i class="fa fa-check"></i> New Email</a>
-  </div><!-- /.button-group -->
-  <div class="button-group pull-left">
-    <a class="button is-default">Forward</a>
-    <a class="button is-default">Archive</a>
-    <a class="button is-default">Move</a>
-  </div><!-- /.button-group -->
-  <div class="button-group pull-left">
-    <a class="button is-danger">Delete</a>
-  </div><!-- /.button-group -->
-</div><!-- /.button-group-row -->
+<a class="Button Button--base Button--default"><i class="fa fa-fw fa-search"></i></a>
 ```
+
+**Button + Font Awesome**
+```html
+<a class="Button Button--base Button--default"><i class="fa fa-fw fa-search"></i> Search</a>
+```
+
+**Horizontal Group + Button + Font Awesome**
+```html
+<div class="ButtonGroup ButtonGroup--horizontal">
+  <div class="ButtonGroup-item">
+    <a class="Button Button--small Button--success"><i class="fa fa-fw fa-check"></i> New Email</a>
+  </div>
+</div>
+<div class="ButtonGroup ButtonGroup--horizontal">
+  <div class="ButtonGroup-item">
+    <a class="Button Button--small Button--outline"><i class="fa fa-fw fa-mail-forward"></i> Forward</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a class="Button Button--small Button--outline"><i class="fa fa-fw fa-archive"></i> Archive</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a class="Button Button--small Button--outline"><i class="fa fa-fw fa-folder"></i> Move</a>
+  </div>
+</div>
+<div class="ButtonGroup ButtonGroup--horizontal">
+  <div class="ButtonGroup-item">
+    <a class="Button Button--small Button--error"><i class="fa fa-fw fa-trash"></i> Delete</a>
+  </div>
+</div>
+```
+
+**Vertical Group + Small Button + Font Awesome**
+```html
+<div class="ButtonGroup ButtonGroup--vertical">
+  <div class="ButtonGroup-item">
+    <a class="Button Button--small Button--outline"><i class="fa fa-fw fa-euro"></i> EUR</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a class="Button Button--small Button--outline"><i class="fa fa-fw fa-gbp"></i> GBP</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a class="Button Button--small Button--outline"><i class="fa fa-fw fa-dollar"></i> USD</a>
+  </div>
+</div>
+```
+
+## Support
+IE8+
+
 ## License & credits
 The [MIT License](https://github.com/KrisOlszewski/Kanso/blob/master/LICENSE.md) (MIT).
 

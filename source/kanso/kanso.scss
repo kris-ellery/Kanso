@@ -6,12 +6,18 @@
  */
 
 .Button {
-  background: transparent;
-  border: 1px solid transparent;
+  background: map-get($button-base, background);
+  border: 1px solid map-get($button-base, border);
+  border-radius: map-get($button-base, border-radius);
   box-sizing: border-box;
+  color: map-get($button-base, text);
   cursor: pointer;
   display: inline-block;
   font-family: $button-font-family;
+  font-size: map-get($button-base, font-size);
+  min-height: map-get($button-base, min-height);
+  line-height: map-get($button-base, line-height);
+  padding: map-get($button-base, padding);
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -22,6 +28,11 @@
   vertical-align: middle;
   -webkit-appearance: none;
   -webkit-font-smoothing: antialiased;
+  &:hover {
+    background-color: map-get($button-base, active-background);
+    border-color: map-get($button-base, active-border);
+    color: map-get($button-base, active-color);
+  }
   &::-moz-focus-inner {
     padding: 0;
     margin: 0;

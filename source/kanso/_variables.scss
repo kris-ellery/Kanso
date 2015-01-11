@@ -5,15 +5,21 @@
 $button-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $button-disabled-opacity: .65;
 $button-group-offset: 30px;
+$button-base: (
+  font-size         : 14px,
+  line-height       : (20/14),
+  min-height        : 34px,
+  padding           : 6px 12px,
+  border-radius     : 3px,
+  text              : #fff,
+  background        : #656D78,
+  border            : #434A54,
+  active-text       : #fff,
+  active-background : #434A54,
+  active-border     : #434A54
+);
 
 $button-sizes: (
-  base: (
-    font-size: 14px,
-    line-height: (20/14),
-    min-height: 34px,
-    padding: 6px 12px,
-    border-radius: 3px
-  ),
   small: (
     font-size: 12px,
     line-height: (18/12),
@@ -31,14 +37,6 @@ $button-sizes: (
 );
 
 $button-variations: (
-  default: (
-    text              : #fff,
-    background        : #656D78,
-    border            : #434A54,
-    active-text       : #fff,
-    active-background : #434A54,
-    active-border     : #434A54
-  ),
   primary: (
     text              : #fff,
     background        : #AC92EC,

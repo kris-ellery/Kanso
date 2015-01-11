@@ -9,48 +9,48 @@ Kanso (簡素), in Japanese aesthetics, means simplicity or elimination of clutt
 
 **Base + Variation**
 ```html
-<a class="Button Button--base Button--default">Default</a>
-<a class="Button Button--base Button--primary">Primary</a>
-<a class="Button Button--base Button--secondary">Secondary</a>
-<a class="Button Button--base Button--outline">Outline</a>
-<a class="Button Button--base Button--link">Link</a>
-<a class="Button Button--base Button--info">Info</a>
-<a class="Button Button--base Button--success">Success</a>
-<a class="Button Button--base Button--warning">Warning</a>
-<a class="Button Button--base Button--error">Error</a>
+<a class="Button">Default</a>
+<a class="Button Button--primary">Primary</a>
+<a class="Button Button--secondary">Secondary</a>
+<a class="Button Button--outline">Outline</a>
+<a class="Button Button--link">Link</a>
+<a class="Button Button--info">Info</a>
+<a class="Button Button--success">Success</a>
+<a class="Button Button--warning">Warning</a>
+<a class="Button Button--error">Error</a>
 ```
 
 **Small**
 ```html
-<a class="Button Button--small Button--default">Small</a>
+<a class="Button Button--small">Small</a>
 ```
 
 **Large**
 ```html
-<a class="Button Button--large Button--default">Large</a>
+<a class="Button Button--large">Large</a>
 ```
 
 **Form**
 ```html
-<input type="submit" class="Button Button--base Button--default" value="Submit">
-<input type="Button" class="Button Button--base Button--default" value="Button">
-<input type="reset" class="Button Button--base Button--default" value="Reset">
-<button class="Button Button--base Button--default">Button</button>
+<input type="submit" class="Button" value="Submit">
+<input type="Button" class="Button" value="Button">
+<input type="reset" class="Button" value="Reset">
+<button class="Button">Button</button>
 ```
 
 **Disabled**
 ```html
-<a class="Button Button--base Button--default is-disabled">Disabled</a>
+<a class="Button is-disabled">Disabled</a>
 ```
 
 **Button w/out text + Font Awesome**
 ```html
-<a class="Button Button--base Button--default"><i class="fa fa-fw fa-search"></i></a>
+<a class="Button"><i class="fa fa-fw fa-search"></i></a>
 ```
 
 **Button + Font Awesome**
 ```html
-<a class="Button Button--base Button--default"><i class="fa fa-fw fa-search"></i> Search</a>
+<a class="Button"><i class="fa fa-fw fa-search"></i> Search</a>
 ```
 
 **Horizontal Group + Button + Font Awesome**

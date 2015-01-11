@@ -1,6 +1,6 @@
 /**
  * Kanso - Semantic Flat Buttons v3.0.0
- * Saturday, January 10th, 2015, 11:59:23 PM
+ * Sunday, January 11th, 2015, 12:24:28 AM
  * 
  * 2014 Kris Olszewski | http://www.kolszewski.com/
  */
@@ -13,12 +13,16 @@
 .Button
 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
 
     position: relative;
 
     display: inline-block;
 
     box-sizing: border-box;
+    min-height: 34px;
+    padding: 6px 12px;
 
     cursor: pointer;
     -webkit-user-select: none;
@@ -31,12 +35,19 @@
     white-space: normal;
     text-decoration: none;
 
-    border: 1px solid transparent;
-    background: transparent;
+    color: #fff;
+    border: 1px solid #434a54;
+    border-radius: 3px;
+    background: #656d78;
 
     text-rendering: optimizeSpeed;
     -webkit-appearance: none;
     -webkit-font-smoothing: antialiased;
+}
+.Button:hover
+{
+    border-color: #434a54;
+    background-color: #434a54;
 }
 .Button::-moz-focus-inner
 {
@@ -67,17 +78,6 @@
  * Button Modifier: Size
  * --------------------------------------------------
  */
-.Button--base
-{
-    font-size: 14px;
-    line-height: 1.42857;
-
-    min-height: 34px;
-    padding: 6px 12px;
-
-    border-radius: 3px;
-}
-
 .Button--small
 {
     font-size: 12px;
@@ -104,19 +104,6 @@
  * Button Modifier: Variations
  * --------------------------------------------------
  */
-.Button--default
-{
-    color: #fff;
-    border-color: #434a54;
-    background-color: #656d78;
-}
-.Button--default:hover
-{
-    color: #fff;
-    border-color: #434a54;
-    background-color: #434a54;
-}
-
 .Button--primary
 {
     color: #fff;

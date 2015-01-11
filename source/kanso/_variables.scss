@@ -7,7 +7,7 @@ $button-disabled-opacity: .65;
 $button-group-offset: 30px;
 $button-base: (
   font-size         : 14px,
-  line-height       : (20/14),
+  line-height       : 20px,
   min-height        : 34px,
   padding           : 6px 12px,
   border-radius     : 3px,
@@ -22,14 +22,14 @@ $button-base: (
 $button-sizes: (
   small: (
     font-size: 12px,
-    line-height: (18/12),
+    line-height: 18px,
     min-height: 28px,
     padding: 4px 8px,
     border-radius: 2px
   ),
   large: (
     font-size: 16px,
-    line-height: (22/16),
+    line-height: 22px,
     min-height: 40px,
     padding: 8px 16px,
     border-radius: 4px

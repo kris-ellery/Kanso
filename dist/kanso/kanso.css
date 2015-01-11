@@ -1,6 +1,6 @@
 /**
  * Kanso - Semantic Flat Buttons v3.0.0
- * Sunday, January 11th, 2015, 12:24:28 AM
+ * Sunday, January 11th, 2015, 12:36:47 AM
  * 
  * 2014 Kris Olszewski | http://www.kolszewski.com/
  */
@@ -14,7 +14,7 @@
 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
-    line-height: 1.42857;
+    line-height: 20px;
 
     position: relative;
 
@@ -81,7 +81,7 @@
 .Button--small
 {
     font-size: 12px;
-    line-height: 1.5;
+    line-height: 18px;
 
     min-height: 28px;
     padding: 4px 8px;
@@ -92,7 +92,7 @@
 .Button--large
 {
     font-size: 16px;
-    line-height: 1.375;
+    line-height: 22px;
 
     min-height: 40px;
     padding: 8px 16px;

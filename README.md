@@ -7,7 +7,7 @@ Set of flat buttons written in CSS (Sass) and HTML. Font Awesome compatible.
 
 ## Usage
 
-**Base + Variation**
+**Base**
 ```html
 <a role="button" class="Button">Default</a>
 <a role="button" class="Button Button--primary">Primary</a>
@@ -22,38 +22,78 @@ Set of flat buttons written in CSS (Sass) and HTML. Font Awesome compatible.
 
 **Small**
 ```html
-<a role="button" class="Button Button--small">Small</a>
+<a role="button" class="Button Button--small">Default</a>
+<a role="button" class="Button Button--small Button--primary">Primary</a>
+<a role="button" class="Button Button--small Button--secondary">Secondary</a>
+<a role="button" class="Button Button--small Button--outline">Outline</a>
+<a role="button" class="Button Button--small Button--link">Link</a>
 ```
 
 **Large**
 ```html
-<a role="button" class="Button Button--large">Large</a>
+<a role="button" class="Button Button--large">Default</a>
+<a role="button" class="Button Button--large Button--primary">Primary</a>
+<a role="button" class="Button Button--large Button--secondary">Secondary</a>
+<a role="button" class="Button Button--large Button--outline">Outline</a>
+<a role="button" class="Button Button--large Button--link">Link</a>
 ```
 
 **Form**
 ```html
-<input type="submit" role="button" class="Button" value="Submit">
-<input type="button" role="button" class="Button" value="Button">
-<input type="reset" role="button" class="Button" value="Reset">
-<button type="button" role="button" class="Button">Button</button>
+<input type="submit" role="button" class="Button Button--primary" value="type='submit'">
+<input type="Button" role="button" class="Button Button--secondary" value="type='button'">
+<input type="reset" role="button" class="Button Button--error" value="type='reset'">
+<button type="button" role="button" class="Button Button--outline">button</button>
 ```
 
 **Disabled**
 ```html
-<a role="button" class="Button is-disabled">Disabled</a>
+<a role="button" class="Button is-disabled">Default</a>
+<a role="button" class="Button Button--primary is-disabled">Primary</a>
+<a role="button" class="Button Button--secondary is-disabled">Secondary</a>
+<a role="button" class="Button Button--outline is-disabled">Outline</a>
+<a role="button" class="Button Button--link is-disabled">Link</a>
 ```
 
-**Button w/out text + Font Awesome**
+**Button + [Font Awesome](http://fontawesome.io/)**
 ```html
-<a role="button" class="Button"><i class="fa fa-fw fa-search"></i></a>
-```
-
-**Button + Font Awesome**
-```html
+<a role="button" class="Button"><i class="fa fa-fw fa-cloud"></i> Cloud</a>
+<a role="button" class="Button"><i class="fa fa-fw fa-cog"></i> Cog</a>
+<a role="button" class="Button"><i class="fa fa-fw fa-database"></i> Database</a>
+<a role="button" class="Button"><i class="fa fa-fw fa-heart"></i> Heart</a>
 <a role="button" class="Button"><i class="fa fa-fw fa-search"></i> Search</a>
+<a role="button" class="Button"><i class="fa fa-fw fa-inbox"></i> Inbox</a>
 ```
 
-**Horizontal Group + Button + Font Awesome**
+**Button w/out text + [Font Awesome](http://fontawesome.io/)**
+```html
+<a role="button" class="Button"><i class="fa fa-fw fa-cloud"></i></a>
+<a role="button" class="Button"><i class="fa fa-fw fa-cog"></i></a>
+<a role="button" class="Button"><i class="fa fa-fw fa-database"></i></a>
+<a role="button" class="Button"><i class="fa fa-fw fa-heart"></i></a>
+<a role="button" class="Button"><i class="fa fa-fw fa-search"></i></a>
+<a role="button" class="Button"><i class="fa fa-fw fa-inbox"></i></a>
+```
+
+**Horizontal Group + Button**
+```html
+<div class="ButtonGroup ButtonGroup--horizontal">
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button">All</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline">Published</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline">Unpublished</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline">Drafts</a>
+  </div>
+</div>
+```
+
+**Horizontal Group + Small Button + [Font Awesome](http://fontawesome.io/)**
 ```html
 <div class="ButtonGroup ButtonGroup--horizontal">
   <div class="ButtonGroup-item">
@@ -78,7 +118,51 @@ Set of flat buttons written in CSS (Sass) and HTML. Font Awesome compatible.
 </div>
 ```
 
-**Vertical Group + Small Button + Font Awesome**
+**Horizontal Group + Button w/out text + [Font Awesome](http://fontawesome.io/)**
+```html
+<div class="ButtonGroup ButtonGroup--horizontal">
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-align-left"></i></a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-align-justify"></i></a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-align-right"></i></a>
+  </div>
+</div>
+<div class="ButtonGroup ButtonGroup--horizontal">
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-bold"></i></a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-italic"></i></a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-underline"></i></a>
+  </div>
+</div>
+```
+
+**Vertical Group + Button**
+```html
+<div class="ButtonGroup ButtonGroup--vertical">
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button">All</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline">Published</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline">Unpublished</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline">Drafts</a>
+  </div>
+</div>
+```
+
+**Vertical Group + Small Button + [Font Awesome](http://fontawesome.io/)**
 ```html
 <div class="ButtonGroup ButtonGroup--vertical">
   <div class="ButtonGroup-item">
@@ -93,10 +177,25 @@ Set of flat buttons written in CSS (Sass) and HTML. Font Awesome compatible.
 </div>
 ```
 
+**Vertical Group + Button w/out text + [Font Awesome](http://fontawesome.io/)**
+```html
+<div class="ButtonGroup ButtonGroup--vertical">
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-bar-chart"></i></a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-pie-chart"></i></a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-line-chart"></i></a>
+  </div>
+</div>
+```
+
 ## Support
 IE8+
 
 ## License & credits
 The [MIT License](https://github.com/KrisOlszewski/Kanso/blob/master/LICENSE.md) (MIT).
 
-Font Awesome Icons by [Dave Gandy](http://fontawesome.io/).
+Font Awesome by [Dave Gandy](http://fontawesome.io/).

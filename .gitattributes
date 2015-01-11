@@ -1,0 +1,5 @@
+# Enforce Unix newlines
+*.md    text eol=lf
+*.html  text eol=lf
+*.scss  text eol=lf
+*.css   text eol=lf

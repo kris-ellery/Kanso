@@ -23,19 +23,11 @@ Set of flat buttons written in CSS (Sass) and HTML. Font Awesome compatible.
 **Small**
 ```html
 <a role="button" class="Button Button--small">Default</a>
-<a role="button" class="Button Button--small Button--primary">Primary</a>
-<a role="button" class="Button Button--small Button--secondary">Secondary</a>
-<a role="button" class="Button Button--small Button--outline">Outline</a>
-<a role="button" class="Button Button--small Button--link">Link</a>
 ```
 
 **Large**
 ```html
 <a role="button" class="Button Button--large">Default</a>
-<a role="button" class="Button Button--large Button--primary">Primary</a>
-<a role="button" class="Button Button--large Button--secondary">Secondary</a>
-<a role="button" class="Button Button--large Button--outline">Outline</a>
-<a role="button" class="Button Button--large Button--link">Link</a>
 ```
 
 **Form**
@@ -49,30 +41,16 @@ Set of flat buttons written in CSS (Sass) and HTML. Font Awesome compatible.
 **Disabled**
 ```html
 <a role="button" class="Button is-disabled">Default</a>
-<a role="button" class="Button Button--primary is-disabled">Primary</a>
-<a role="button" class="Button Button--secondary is-disabled">Secondary</a>
-<a role="button" class="Button Button--outline is-disabled">Outline</a>
-<a role="button" class="Button Button--link is-disabled">Link</a>
 ```
 
 **Button + [Font Awesome](http://fontawesome.io/)**
 ```html
 <a role="button" class="Button"><i class="fa fa-fw fa-cloud"></i> Cloud</a>
-<a role="button" class="Button"><i class="fa fa-fw fa-cog"></i> Cog</a>
-<a role="button" class="Button"><i class="fa fa-fw fa-database"></i> Database</a>
-<a role="button" class="Button"><i class="fa fa-fw fa-heart"></i> Heart</a>
-<a role="button" class="Button"><i class="fa fa-fw fa-search"></i> Search</a>
-<a role="button" class="Button"><i class="fa fa-fw fa-inbox"></i> Inbox</a>
 ```
 
 **Button w/out text + [Font Awesome](http://fontawesome.io/)**
 ```html
 <a role="button" class="Button"><i class="fa fa-fw fa-cloud"></i></a>
-<a role="button" class="Button"><i class="fa fa-fw fa-cog"></i></a>
-<a role="button" class="Button"><i class="fa fa-fw fa-database"></i></a>
-<a role="button" class="Button"><i class="fa fa-fw fa-heart"></i></a>
-<a role="button" class="Button"><i class="fa fa-fw fa-search"></i></a>
-<a role="button" class="Button"><i class="fa fa-fw fa-inbox"></i></a>
 ```
 
 **Horizontal Group + Button**
@@ -131,16 +109,6 @@ Set of flat buttons written in CSS (Sass) and HTML. Font Awesome compatible.
     <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-align-right"></i></a>
   </div>
 </div>
-<div class="ButtonGroup ButtonGroup--horizontal">
-  <div class="ButtonGroup-item">
-    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-bold"></i></a>
-  </div>
-  <div class="ButtonGroup-item">
-    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-italic"></i></a>
-  </div>
-  <div class="ButtonGroup-item">
-    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-underline"></i></a>
-  </div>
 </div>
 ```
 

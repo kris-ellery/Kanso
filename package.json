@@ -1,12 +1,12 @@
 {
   "name": "kanso",
-  "title": "Kanso - Semantic Flat Buttons",
+  "title": "Kanso - Buttons Component",
   "version": "3.0.0",
   "author": {
     "name": "Kris Olszewski",
     "url": "http://www.kolszewski.com/"
   },
-  "description": "Set of free semantic flat buttons written in CSS and HTML. SASS and LESS source code available.",
+  "description": "Set of free flat buttons written in CSS (Sass) and HTML. Font Awesome compatible.",
   "contributors": [
     {
       "name": "Kris Olszewski",

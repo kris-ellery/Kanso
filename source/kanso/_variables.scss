@@ -1,0 +1,104 @@
+//
+// Variables
+// --------------------------------------------------
+
+$button-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$button-disabled-opacity: .65;
+$button-group-offset: 30px;
+$button-base: (
+  font-size         : 14px,
+  line-height       : 20px,
+  min-height        : 34px,
+  padding           : 6px 12px,
+  border-radius     : 3px,
+  text              : #fff,
+  background        : #656D78,
+  border            : #434A54,
+  active-text       : #fff,
+  active-background : #434A54,
+  active-border     : #434A54
+);
+
+$button-sizes: (
+  small: (
+    font-size: 12px,
+    line-height: 18px,
+    min-height: 28px,
+    padding: 4px 8px,
+    border-radius: 2px
+  ),
+  large: (
+    font-size: 16px,
+    line-height: 22px,
+    min-height: 40px,
+    padding: 8px 16px,
+    border-radius: 4px
+  )
+);
+
+$button-variations: (
+  primary: (
+    text              : #fff,
+    background        : #AC92EC,
+    border            : #967ADC,
+    active-text       : #fff,
+    active-background : #967ADC,
+    active-border     : #967ADC
+  ),
+  secondary: (
+    text              : #fff,
+    background        : #5D9CEC,
+    border            : #4A89DC,
+    active-text       : #fff,
+    active-background : #4A89DC,
+    active-border     : #4A89DC
+  ),
+  outline: (
+    text              : #434A54,
+    background        : transparent,
+    border            : #434A54,
+    active-text       : #fff,
+    active-background : #434A54,
+    active-border     : #434A54
+  ),
+  link: (
+    text              : #5D9CEC,
+    background        : transparent,
+    border            : transparent,
+    active-text       : #4A89DC,
+    active-background : transparent,
+    active-border     : transparent
+  ),
+  success: (
+    text              : #fff,
+    background        : #A0D468,
+    border            : #8CC152,
+    active-text       : #fff,
+    active-background : #8CC152,
+    active-border     : #8CC152
+  ),
+  info: (
+    text              : #fff,
+    background        : #4FC1E9,
+    border            : #3BAFDA,
+    active-text       : #fff,
+    active-background : #3BAFDA,
+    active-border     : #3BAFDA
+  ),
+  warning: (
+    text              : #fff,
+    background        : #FFCE54,
+    border            : #F6BB42,
+    active-text       : #fff,
+    active-background : #F6BB42,
+    active-border     : #F6BB42
+  ),
+  error: (
+    text              : #fff,
+    background        : #ED5565,
+    border            : #DA4453,
+    active-text       : #fff,
+    active-background : #DA4453,
+    active-border     : #DA4453
+  )
+);

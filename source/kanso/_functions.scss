@@ -1,0 +1,11 @@
+//
+// Functions
+// --------------------------------------------------
+
+@function get-button-size($size, $property) {
+  @return map-get(map-get($button-sizes, $size), $property);
+}
+
+@function get-button-variation($variation, $property) {
+  @return map-get(map-get($button-variations, $variation), $property);
+}

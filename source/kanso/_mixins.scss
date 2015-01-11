@@ -1,0 +1,34 @@
+//
+// Mixins
+// --------------------------------------------------
+
+@mixin generate-button-variation-modifiers() {
+
+  @each $variation, $values in $button-variations {
+    .Button--#{$variation} {
+      background-color : get-button-variation($variation, background);
+      border-color     : get-button-variation($variation, border);
+      color            : get-button-variation($variation, text);
+      &:hover {
+        background-color : get-button-variation($variation, active-background);
+        border-color     : get-button-variation($variation, active-border);
+        color            : get-button-variation($variation, active-text);
+      }
+    }
+  }
+
+} // generate-button-variation-modifiers()
+
+@mixin generate-button-size-modifiers() {
+
+  @each $size, $values in $button-sizes {
+    .Button--#{$size} {
+      font-size     : get-button-size($size, font-size);
+      line-height   : get-button-size($size, line-height);
+      min-height    : get-button-size($size, min-height);
+      padding       : get-button-size($size, padding);
+      border-radius : get-button-size($size, border-radius);
+    }
+  }
+
+} // generate-button-size-modifiers()

@@ -1,26 +1,34 @@
 {
   "name": "kanso",
-  "title": "Kanso - Semantic Flat Buttons",
-  "description": "Set of free semantic flat buttons written in CSS and HTML. SASS and LESS source code available.",
-  "version": "2.0.1",
-  "homepage": "http://www.kolszewski.com/kanso/",
+  "title": "Kanso - Buttons Component",
+  "version": "3.0.0",
   "author": {
     "name": "Kris Olszewski",
     "url": "http://www.kolszewski.com/"
   },
+  "description": "Set of free flat buttons written in CSS (Sass) and HTML. Font Awesome compatible.",
+  "contributors": [
+    {
+      "name": "Kris Olszewski",
+      "email": "contact@kolszewski.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/KrisOlszewski/Kanso"
   },
-  "license": "The MIT License (MIT)",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-sass": "~0.5.0",
-    "grunt-contrib-less": "~0.7.0",
-    "grunt-autoprefixer": "~0.3.0",
-    "grunt-csscomb": "~0.5.0",
-    "grunt-csso": "~0.5.0",
-    "grunt-banner": "~0.2.0",
-    "grunt-contrib-watch": "~0.5.3"
+    "grunt": "0.4.X",
+    "grunt-autoprefixer": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-csscomb": "*",
+    "grunt-csso": "*",
+    "grunt-notify": "*",
+    "load-grunt-tasks": "*",
+    "time-grunt": "*"
   }
 }

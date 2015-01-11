@@ -1,0 +1,145 @@
+@import "variables", "functions", "mixins";
+
+/**
+ * Button
+ * --------------------------------------------------
+ */
+
+.Button {
+  background: map-get($button-base, background);
+  border: 1px solid map-get($button-base, border);
+  border-radius: map-get($button-base, border-radius);
+  box-sizing: border-box;
+  color: map-get($button-base, text);
+  cursor: pointer;
+  display: inline-block;
+  font-family: $button-font-family;
+  font-size: map-get($button-base, font-size);
+  min-height: map-get($button-base, min-height);
+  line-height: map-get($button-base, line-height);
+  padding: map-get($button-base, padding);
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: optimizeSpeed;
+  transition: background-color .25s ease, border-color .25s ease, color .25s ease;
+  user-select: none;
+  white-space: normal;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  &:hover {
+    background-color: map-get($button-base, active-background);
+    border-color: map-get($button-base, active-border);
+    color: map-get($button-base, active-color);
+  }
+  &::-moz-focus-inner {
+    padding: 0;
+    margin: 0;
+  }
+  &:focus {
+    outline: 1px dotted;
+    outline: 3px auto -webkit-focus-ring-color;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+  &:disabled,
+  &.is-disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: $button-disabled-opacity;
+  }
+}
+
+/**
+ * Button Modifier: Size
+ * --------------------------------------------------
+ */
+
+@include generate-button-size-modifiers();
+
+/**
+ * Button Modifier: Variations
+ * --------------------------------------------------
+ */
+
+@include generate-button-variation-modifiers();
+
+/**
+ * Button Group: Vertical and Horizontal
+ * --------------------------------------------------
+ */
+
+.ButtonGroup {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  + .ButtonGroup {
+    margin-left: $button-group-offset;
+  }
+}
+
+.ButtonGroup-item {
+  &:not(:first-child):not(:last-child) {
+    > .Button {
+      border-radius: 0 !important;
+    }
+  }
+  > .Button {
+    display: block;
+    width: 100%;
+    &:hover,
+    &:focus,
+    &:active {
+      z-index: 1;
+    }
+  }
+}
+
+.ButtonGroup--horizontal {
+  > .ButtonGroup-item {
+    margin-left: -1px;
+    display: inline-block;
+    &:first-child:not(:only-child) {
+      margin-left: 0;
+      > .Button {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+    }
+    &:last-child:not(:only-child) {
+      > .Button {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+      }
+    }
+  }
+}
+
+.ButtonGroup--vertical {
+  > .ButtonGroup-item {
+    margin-top: -1px;
+    display: block;
+    &:first-child:not(:only-child) {
+      margin-top: 0;
+      > .Button {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+    }
+    &:last-child:not(:only-child) {
+      > .Button {
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+      }
+    }
+    > .Button {
+      text-align: left;
+    }
+  }
+}

@@ -1,60 +1,169 @@
-# [Kanso - Semantic Flat Buttons](http://www.kolszewski.com/kanso)
-Set of semantic flat buttons written in CSS and HTML. SASS and LESS source code available. 
+# [Kanso - Buttons Component](http://www.kolszewski.com/kanso)
+Set of flat buttons written in CSS (Sass) and HTML. Font Awesome compatible.
 
-Kanso (簡素), in Japanese aesthetics, means simplicity or elimination of clutter. Things are expressed in a plain, simple, natural manner. Reminds us to think not in terms of decoration but in terms of clarity, a kind of clarity that may be achieved through omission or exclusion of the non-essential. 
+> *Kanso (簡素)*, in Japanese aesthetics, means simplicity or elimination of clutter. Things are expressed in a plain, simple, natural manner. Reminds us to think not in terms of decoration but in terms of clarity, a kind of clarity that may be achieved through omission or exclusion of the non-essential.
 
 [Live demo](http://www.kolszewski.com/kanso)
 
-Support: IE8+ and modern browsers
-
-Note: by default this project supports SASS. If you want to use LESS please change GruntJS configuration.
-
 ## Usage
-**Anchor buttons**
+
+**Base**
 ```html
-<a class="button is-default">Default</a>
-<a class="button is-primary">Primary</a>
-<a class="button is-secondary">Secondary</a>
-<a class="button is-success">Success</a>
-<a class="button is-danger">Danger</a>
-<a class="button is-link">Link</a>
+<a role="button" class="Button">Default</a>
+<a role="button" class="Button Button--primary">Primary</a>
+<a role="button" class="Button Button--secondary">Secondary</a>
+<a role="button" class="Button Button--outline">Outline</a>
+<a role="button" class="Button Button--link">Link</a>
+<a role="button" class="Button Button--info">Info</a>
+<a role="button" class="Button Button--success">Success</a>
+<a role="button" class="Button Button--warning">Warning</a>
+<a role="button" class="Button Button--error">Error</a>
 ```
-**Form buttons**
+
+**Small**
 ```html
-<input type="submit" class="button is-default" value="Submit">
-<input type="button" class="button is-default" value="Button">
-<input type="reset" class="button is-default" value="Reset">
-<button class="button is-default">Button</button>
+<a role="button" class="Button Button--small">Default</a>
 ```
-**Disabled buttons**
+
+**Large**
 ```html
-<a class="button is-default is-disabled">Disabled</a>
+<a role="button" class="Button Button--large">Default</a>
 ```
-**Icon buttons - (Font Awesome Icons)**
+
+**Form**
 ```html
-<a class="button is-default has-fixed-icon"><i class="fa fa-search"></i></a>
+<input type="submit" role="button" class="Button Button--primary" value="type='submit'">
+<input type="Button" role="button" class="Button Button--secondary" value="type='button'">
+<input type="reset" role="button" class="Button Button--error" value="type='reset'">
+<button type="button" role="button" class="Button Button--outline">button</button>
 ```
-**Icon buttons with text**
+
+**Disabled**
 ```html
-<a class="button is-default has-icon-spacing"><i class="fa fa-search"></i> Search</a>
+<a role="button" class="Button is-disabled">Default</a>
 ```
-**Button group**
+
+**Button + [Font Awesome](http://fontawesome.io/)**
 ```html
-<div class="button-group-row">
-  <div class="button-group pull-left">
-    <a class="button is-success has-icon-spacing"><i class="fa fa-check"></i> New Email</a>
-  </div><!-- /.button-group -->
-  <div class="button-group pull-left">
-    <a class="button is-default">Forward</a>
-    <a class="button is-default">Archive</a>
-    <a class="button is-default">Move</a>
-  </div><!-- /.button-group -->
-  <div class="button-group pull-left">
-    <a class="button is-danger">Delete</a>
-  </div><!-- /.button-group -->
-</div><!-- /.button-group-row -->
+<a role="button" class="Button"><i class="fa fa-fw fa-cloud"></i> Cloud</a>
 ```
+
+**Button w/out text + [Font Awesome](http://fontawesome.io/)**
+```html
+<a role="button" class="Button"><i class="fa fa-fw fa-cloud"></i></a>
+```
+
+**Horizontal Group + Button**
+```html
+<div class="ButtonGroup ButtonGroup--horizontal">
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button">All</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline">Published</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline">Unpublished</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline">Drafts</a>
+  </div>
+</div>
+```
+
+**Horizontal Group + Small Button + [Font Awesome](http://fontawesome.io/)**
+```html
+<div class="ButtonGroup ButtonGroup--horizontal">
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--small Button--success"><i class="fa fa-fw fa-check"></i> New Email</a>
+  </div>
+</div>
+<div class="ButtonGroup ButtonGroup--horizontal">
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--small Button--outline"><i class="fa fa-fw fa-mail-forward"></i> Forward</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--small Button--outline"><i class="fa fa-fw fa-archive"></i> Archive</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--small Button--outline"><i class="fa fa-fw fa-folder"></i> Move</a>
+  </div>
+</div>
+<div class="ButtonGroup ButtonGroup--horizontal">
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--small Button--error"><i class="fa fa-fw fa-trash"></i> Delete</a>
+  </div>
+</div>
+```
+
+**Horizontal Group + Button w/out text + [Font Awesome](http://fontawesome.io/)**
+```html
+<div class="ButtonGroup ButtonGroup--horizontal">
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-align-left"></i></a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-align-justify"></i></a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-align-right"></i></a>
+  </div>
+</div>
+</div>
+```
+
+**Vertical Group + Button**
+```html
+<div class="ButtonGroup ButtonGroup--vertical">
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button">All</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline">Published</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline">Unpublished</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline">Drafts</a>
+  </div>
+</div>
+```
+
+**Vertical Group + Small Button + [Font Awesome](http://fontawesome.io/)**
+```html
+<div class="ButtonGroup ButtonGroup--vertical">
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--small Button--outline"><i class="fa fa-fw fa-euro"></i> EUR</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--small Button--outline"><i class="fa fa-fw fa-gbp"></i> GBP</a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--small Button--outline"><i class="fa fa-fw fa-dollar"></i> USD</a>
+  </div>
+</div>
+```
+
+**Vertical Group + Button w/out text + [Font Awesome](http://fontawesome.io/)**
+```html
+<div class="ButtonGroup ButtonGroup--vertical">
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-bar-chart"></i></a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-pie-chart"></i></a>
+  </div>
+  <div class="ButtonGroup-item">
+    <a role="button" class="Button Button--outline"><i class="fa fa-fw fa-line-chart"></i></a>
+  </div>
+</div>
+```
+
+## Support
+IE8+
+
 ## License & credits
 The [MIT License](https://github.com/KrisOlszewski/Kanso/blob/master/LICENSE.md) (MIT).
 
-Font Awesome Icons by [Dave Gandy](http://fontawesome.io/).
+Font Awesome by [Dave Gandy](http://fontawesome.io/).

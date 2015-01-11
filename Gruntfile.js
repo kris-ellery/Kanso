@@ -1,93 +1,90 @@
-
-module.exports = function( grunt ) {
+module.exports = function(grunt) {
 
   'use strict';
-  
-  var fs = require('fs'), pkginfo = grunt.file.readJSON('package.json');
-  
-  grunt.initConfig({
-  
-    // Get package meta
-    pkg: pkginfo,
-    
-    // Create package meta banner
-    meta: {
-      banner: '/*! <%= pkg.title %> <%= pkg.version %> | <%= pkg.author.url %> |(c) 2013 <%= pkg.author.name %> | <%= pkg.license %> */'
+
+  grunt.config.init({
+
+    /* Project details */
+    pkg: grunt.file.readJSON('package.json'),
+
+    /* Paths */
+    path: {
+      source  : 'source',
+      temp    : '.tmp',
+      build   : 'dist',
+      styles  : 'kanso',
+      vendors : 'vendors',
+      views   : 'example'
     },
-    
-    // Compile SASS
-    sass: {
-      dist: {
-        options: {
-          style: 'expanded'
-        },
-        files: { 'production/css/kanso.css' : 'development/sass/kanso.scss' }
-      }
-    },
-    
-    /* Compile LESS
-    less: {
-      dist: {
-        files: { 'production/css/kanso.css' : 'development/less/kanso.less' }
-      }
-    },
-    */
-    
-    // Append vendor prefixes
-    autoprefixer: {
-      dist: {
-        files: { 'production/css/kanso.css' : 'production/css/kanso.css' }
-      }
-    },
-    
-    // Comb CSS
-    csscomb: {
-      dist: {
-        files: { 'production/css/kanso.css' : 'production/css/kanso.css' }
-      }
-    },
-    
-    // Minify CSS
-    csso: {
-      dist: {
-        options: {
-          report: 'min'
-        },
-        files: { 'production/css/kanso.min.css' : 'production/css/kanso.css' },
-      }
-    },
-    
-    // Append package meta banner
-    usebanner: {
-      dist: {
-        options: {
-          position: 'top',
-          banner: '<%= meta.banner %>\n'
-        },
-        src: [ 'production/css/*.css' ]
-      }
-    },
-    
-    // Watch for changes
-    watch: {
-      css: {
-        files: [ 'development/sass/**/*.scss', 'development/less/**/*.less'],
-        tasks: [ 'build' ]
-      }
-    }
-    
-  });
-  
-  // Load Grunt Tasks
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  /* grunt.loadNpmTasks('grunt-contrib-less'); */
-  grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-csscomb');
-  grunt.loadNpmTasks('grunt-csso');
-  grunt.loadNpmTasks('grunt-banner');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  
-  // Register Grunt Tasks
-  grunt.registerTask('build', [ 'sass', /* 'less', */ 'autoprefixer', 'csscomb', 'csso', 'usebanner' ]);
-  
+
+    /* Banner */
+    banner:
+      '/**\n' +
+      ' * <%= pkg.title %> v<%= pkg.version %>\n' +
+      ' * <%= grunt.template.today("dddd, mmmm dS, yyyy, h:MM:ss TT") %>\n' +
+      ' * \n' +
+      ' * 2014 <%= pkg.author.name %> | <%= pkg.author.url %>\n' +
+      ' */\n\n',
+
+    /* Global tasks */
+    watch        : require( './grunt/watch.js' ).task,
+    connect      : require( './grunt/connect.js' ).task,
+    clean        : require( './grunt/clean.js' ).task,
+    copy         : require( './grunt/copy.js' ).task,
+
+    /* CSS tasks */
+    sass         : require( './grunt/sass.js' ).task,
+    autoprefixer : require( './grunt/autoprefixer.js' ).task,
+    csscomb      : require( './grunt/csscomb.js' ).task,
+    csso         : require( './grunt/csso.js' ).task,
+
+    /* Notifications */
+    notify       : require( './grunt/notify.js' ).task
+
+  }); // grunt.config.init()
+
+  /* Dependencies */
+  require('time-grunt')(grunt);
+  require('load-grunt-tasks')(grunt);
+
+  /* Tasks */
+  grunt.registerTask('default', [
+    'build',
+    'server'
+  ]);
+
+  grunt.registerTask('build', [
+    'clean:build',
+    'styles',
+    'vendors',
+    'views',
+    'notify:build'
+  ]);
+
+  grunt.registerTask('server', [
+    'connect:static',
+    'watch',
+    'notify:server'
+  ]);
+
+  grunt.registerTask('vendors', [
+    'copy:vendors',
+    'notify:vendors'
+  ]);
+
+  grunt.registerTask('views', [
+    'copy:views',
+    'notify:views'
+  ]);
+
+  grunt.registerTask('styles', [
+    'sass:styles',
+    'autoprefixer:styles',
+    'csscomb:styles',
+    'csso:styles',
+    'copy:styles',
+    'clean:temp',
+    'notify:styles'
+  ]);
+
 };
